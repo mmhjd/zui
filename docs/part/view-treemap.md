@@ -17,28 +17,55 @@
 ```js
 $('#treemapExample1').treemap({
     data: {
-        text: '蔬菜',
+        text: '防风固沙功能区生态功能',
         children: [{
-            html: '<i class="icon icon-heart text-danger"></i> 我的菜',
-            children: [{
-                textColor: 'green',
-                text: '青菜'
+            text: '自然生态指标',
+            children: [{         
+                text: '生态功能指数',
+                children: [{
+                    text: '植被覆盖指数 ',
+                },{
+                    text: '受保护区域面积比',
+                 }]
             }, {
-                html: '<span class="text-info">菠菜</span>'
+                text:'生态结构指数',
+                  children: [{
+                    text: '林草地覆盖率 ',
+                },{
+                    text: '水域湿地面积比',
+                 }]
+            },{
+                text:'生态胁迫指数',
+                  children: [{
+                    text: '耕地和建设用地面积比  ',
+                },{
+                    text: '沙化土地面积比',
+                 }]
             }]
         }, {
-            text: '你的瓜',
-            style: {border: '1px solid green'},
-            collapsed: true,
-            tooltip: '点击展开或折叠',
-            children: ['南瓜', '西瓜', '丝瓜', '苦瓜']
-        }, {
-            text: '甘蓝',
-            children: ['大甘蓝']
-        }, {
-            color: 'orange',
-            textColor: 'white',
-            text: '土豆'
+            text: '自然生态指标',
+            children: [{         
+                text: '生态功能指数',
+                children: [{
+                    text: '植被覆盖指数 ',
+                },{
+                    text: '受保护区域面积比',
+                 }]
+            }, {
+                text:'生态结构指数',
+                  children: [{
+                    text: '林草地覆盖率 ',
+                },{
+                    text: '水域湿地面积比',
+                 }]
+            },{
+                text:'生态胁迫指数',
+                  children: [{
+                    text: '耕地和建设用地面积比  ',
+                },{
+                    text: '沙化土地面积比',
+                 }]
+            }]
         }]
     }
 });
